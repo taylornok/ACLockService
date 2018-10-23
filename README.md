@@ -1,4 +1,7 @@
 # ACLockService
+<<<<<<< HEAD
+I am not able to find and of AC Locks social media when I Google it. 
+=======
 UC BERKELEY BOOTCAMP PROJECT 3-
 Team Members[Gurk, Taylor, Samy]
 
@@ -38,3 +41,4 @@ Problem/Solution-
 
 
 
+>>>>>>> 4d00d2dfe5d3ecfda0297735d000c0107c31b777
