@@ -18,7 +18,7 @@ a {
 }
 
 a:hover {
-  color: #fec503;
+  color:#003262;
 }
 
 .text-primary {
@@ -109,7 +109,7 @@ img::-moz-selection {
 }
 
 #mainNav {
-  background-color: #212529;
+  background-color: #003262;
 }
 
 #mainNav .navbar-toggler {
@@ -143,6 +143,7 @@ img::-moz-selection {
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #fed136;
+  background-color: #003262;
 }
 
 @media (min-width: 992px) {
@@ -152,7 +153,7 @@ img::-moz-selection {
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: transparent;
+    background-color: #003262
   }
   #mainNav .navbar-brand {
     font-size: 1.75em;
@@ -161,11 +162,13 @@ img::-moz-selection {
   }
   #mainNav .navbar-nav .nav-item .nav-link {
     padding: 1.1em 1em !important;
+    background-color: #003262;
+
   }
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #212529;
+    background-color: #003262
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
