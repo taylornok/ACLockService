@@ -1,0 +1,11 @@
+DROP DATABASE IF EXISTS aclockDB;
+
+CREATE DATABASE aclockDB;
+
+USE aclockDB;
+
+CREATE TABLE contacts (
+    id INT AUTO_INCREMENT NOT NULL,
+    name
+
+)
