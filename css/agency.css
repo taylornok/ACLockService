@@ -18,7 +18,7 @@ a {
 }
 
 a:hover {
-  color:#003262;
+  color: #fec503;
 }
 
 .text-primary {
@@ -109,7 +109,7 @@ img::-moz-selection {
 }
 
 #mainNav {
-  background-color: #003262;
+  background-color: #212529;
 }
 
 #mainNav .navbar-toggler {
@@ -143,7 +143,6 @@ img::-moz-selection {
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #fed136;
-  background-color: #003262;
 }
 
 @media (min-width: 992px) {
@@ -153,22 +152,20 @@ img::-moz-selection {
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: #003262
+    background-color: #212529;
   }
   #mainNav .navbar-brand {
-    font-size: 40px;
+    font-size: 1.75em;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
     padding: 1.1em 1em !important;
-    background-color: #003262;
-
   }
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #003262
+    background-color: #212529;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -606,27 +603,6 @@ section#contact {
 
 section#contact .section-heading {
   color: #fff;
-}
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-.list-inline-item{
-  text-decoration: none;
-}
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
 }
 
 section#contact .form-group {
