@@ -81,6 +81,19 @@ section h3.section-subheading {
   color: white;
 }
 
+.fa.fa-facebook, .fab.fa-twitter, .fab.fa-linkedin-in {
+  text-align: center;
+  border-radius: 50%;
+  transition: all 1s ease-in;
+  color: white;
+}
+
+.fa.fa-facebook:hover, .fab.fa-twitter:hover, .fab.fa-linkedin-in:hover {
+  background-color: orange;
+  transform: rotateY(360deg);
+  text-decoration: none;
+}
+
 .btn-primary:active, .btn-primary:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
