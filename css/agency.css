@@ -1,4 +1,4 @@
-/*!
+ /*!
  * Start Bootstrap - Agency v5.0.2 (https://startbootstrap.com/template-overviews/agency)
  * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
@@ -122,7 +122,7 @@ img::-moz-selection {
 }
 
 #mainNav {
-  background-color: #212529;
+  background-color: #0b72da;
 }
 
 #mainNav .navbar-toggler {
@@ -178,7 +178,7 @@ img::-moz-selection {
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #212529;
+    background-color: #046bd3;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
