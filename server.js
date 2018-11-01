@@ -1,27 +1,40 @@
-// Dependencies
-var http = require("http");
-var fs = require("fs");
+// *****************************************************************************
+// Server.js - This file is the initial starting point for the Node/Express server.
+//
+// ******************************************************************************
+// *** Dependencies
+// =============================================================
+var express = require("express");
+var bodyParser = require("body-parser");
 
-// Set our port to 8080
-var PORT = 3000;
+// Sets up the Express App
+// =============================================================
+var app = express();
+var PORT = process.env.PORT || 8080;
 
-// Create our server
-var server = http.createServer(handleRequest);
+// Requiring our models for syncing
+var db = require("./models");
 
-// Create a function for handling the requests and responses coming into our server
-function handleRequest(req, res) {
+// Sets up the Express app to handle data parsing
 
-  // Here we use the fs package to read our index.html file
-  fs.readFile(__dirname + "/index.html", function(err, data) {
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: true }));
+// parse application/json
+app.use(bodyParser.json());
 
-    // We then respond to the client with the HTML page by specifically telling the browser that we are delivering
-    // an html file.
-    res.writeHead(200, { "Content-Type": "text/html" });
-    res.end(data);
+// Static directory
+app.use(express.static("public"));
+
+// Routes
+// =============================================================
+
+require("./routes/contact-api-routes.js")(app);
+require("./routes/html-routes.js")(app);
+
+// Syncing our sequelize models and then starting our Express app
+// =============================================================
+db.sequelize.sync({ force: true }).then(function() {
+  app.listen(PORT, function() {
+    console.log("App listening on PORT " + PORT);
   });
-}
-
-// Starts our server
-server.listen(PORT, function() {
-  console.log("Server is listening on PORT: " + PORT);
 });
