@@ -13,6 +13,8 @@
     @include heading-font;
   }
   .navbar-brand {
+    $color-midnightblue: #003262;
+  background-color: midnightblue;
     color: $primary;
     @include script-font;
     &.active,
@@ -34,6 +36,8 @@
         &.active,
         &:hover {
           color: $primary;
+          $color-midnightblue: #003262;
+  background-color: midnightblue;
         }
       }
     }
