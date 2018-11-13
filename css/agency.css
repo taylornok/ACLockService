@@ -122,7 +122,7 @@ img::-moz-selection {
 }
 
 #mainNav {
-  background-color: #0b72da;
+  background-color: midnightblue;
 }
 
 #mainNav .navbar-toggler {
@@ -165,7 +165,7 @@ img::-moz-selection {
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: #212529;
+  background-color: midnightblue;
   }
   #mainNav .navbar-brand {
     font-size: 1.75em;
@@ -178,7 +178,7 @@ img::-moz-selection {
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #046bd3;
+  background-color: midnightblue;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -238,9 +238,14 @@ header.masthead .intro-text .intro-heading {
   }
 }
 
+#services {
+  background-color: #fed136;
+}
+
 .service-heading {
   margin: 15px 0;
   text-transform: none;
+  background-color: midnightblue;
 }
 
 #portfolio .portfolio-item {
@@ -609,9 +614,10 @@ header.masthead .intro-text .intro-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../img/map-image.png");
+  background-image: url("../img/Photos/IMG_4966.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 section#contact .section-heading {
@@ -668,6 +674,8 @@ section#contact :-ms-input-placeholder {
 footer {
   padding: 25px 0;
   text-align: center;
+  background-color: midnightblue;
+
 }
 
 footer span.copyright {
