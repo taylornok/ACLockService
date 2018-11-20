@@ -21,7 +21,7 @@ module.exports = function (sequelize, DataTypes) {
         message: {
             type: DataTypes.STRING,
             allowNull: false,
-            len: [50]
+            len: [500]
         }
     
     });

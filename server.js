@@ -6,6 +6,10 @@
 // =============================================================
 var express = require("express");
 var bodyParser = require("body-parser");
+var path = require("path");
+var publicPath = path.join(__dirname, 'public');
+var styles = path.join(__dirname, 'css');
+var images = path.join(__dirname, 'img');
 
 // Sets up the Express App
 // =============================================================
@@ -20,10 +24,13 @@ var db = require("./models");
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 // parse application/json
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
+app.use(express.static(publicPath));
+app.use(express.static(styles));
+app.use(express.static(images));
 
 // Static directory
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname + 'public')));
 
 // Routes
 // =============================================================
